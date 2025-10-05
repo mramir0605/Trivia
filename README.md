@@ -1,6 +1,6 @@
 # Project 3 - *Trivia*
 
-Submitted by: **Mary**
+Submitted by: **Mary Ramirez**
 
 **Trivia** is an app that displays a question with four answer choices. It lets users track their current question and how many are remaining, view their total correct answers after completing all the questions, and restart the game once they’ve finished answering them.
 
