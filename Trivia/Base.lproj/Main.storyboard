@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C6h-R7-8nw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trivia View Controller-->
+        <scene sceneID="WPl-LN-vnl">
+            <objects>
+                <viewController id="C6h-R7-8nw" customClass="TriviaViewController" customModule="Trivia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fCk-Ud-P8v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zM-bh-q6s" userLabel="Card Number">
+                                <rect key="frame" x="116.66666666666669" y="132" width="160" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="card category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-j9-mAf" userLabel="Card Category">
+                                <rect key="frame" x="138" y="174" width="117" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="su1-HW-ewp" userLabel="Answer Stack View">
+                                <rect key="frame" x="96.666666666666686" y="320" width="200" height="212.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yxd-Lu-cpg" userLabel="Answer1">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Ri4-at-adf"/>
+                                            <constraint firstAttribute="width" constant="200" id="bWF-b0-Xmc"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="iBd-9X-7Uk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button">
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWO-6m-fnU" userLabel="Answer2">
+                                        <rect key="frame" x="0.0" y="59.333333333333314" width="200" height="34.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="708-Ka-g5z"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="GZu-JU-HhF"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="bBE-vw-sfM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NB-te-N9F" userLabel="Answer3">
+                                        <rect key="frame" x="0.0" y="118.66666666666667" width="200" height="34.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Jed-C9-kgP"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="XwO-RZ-DyQ"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="omH-Zz-pGa"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og9-7B-ldv" userLabel="Answer4">
+                                        <rect key="frame" x="0.0" y="178" width="200" height="34.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="6Ni-4b-T0a"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Bn4-eD-nvj"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="fSv-FG-vJP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="card text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" showsExpansionTextWhenTruncated="YES" sizingRule="oversize" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-9d-Gum" userLabel="Card Field">
+                                <rect key="frame" x="161.33333333333334" y="265.66666666666669" width="70.666666666666657" height="21.666666666666686"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" label="Card Field">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <color key="textColor" systemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dbd-R0-1FL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kd1-9d-Gum" firstAttribute="top" secondItem="vgb-j9-mAf" secondAttribute="bottom" constant="70" id="9nP-B4-iPH"/>
+                            <constraint firstItem="5zM-bh-q6s" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="V01-Il-d9t"/>
+                            <constraint firstItem="kd1-9d-Gum" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="Xyg-P3-hFp"/>
+                            <constraint firstItem="kd1-9d-Gum" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="bAi-tV-57g"/>
+                            <constraint firstItem="su1-HW-ewp" firstAttribute="centerY" secondItem="fCk-Ud-P8v" secondAttribute="centerY" id="bRo-Cs-qsf"/>
+                            <constraint firstItem="5zM-bh-q6s" firstAttribute="top" secondItem="dbd-R0-1FL" secondAttribute="top" constant="14" id="bcT-qj-olD"/>
+                            <constraint firstItem="vgb-j9-mAf" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="c7O-zk-ruV"/>
+                            <constraint firstItem="su1-HW-ewp" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="hEp-Jc-AdH"/>
+                            <constraint firstItem="kd1-9d-Gum" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="hGj-aE-Q6T"/>
+                            <constraint firstItem="vgb-j9-mAf" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="qZN-Mg-F4Z"/>
+                            <constraint firstItem="vgb-j9-mAf" firstAttribute="top" secondItem="5zM-bh-q6s" secondAttribute="bottom" constant="18" id="xJq-Wh-379"/>
+                            <constraint firstItem="kd1-9d-Gum" firstAttribute="centerX" secondItem="fCk-Ud-P8v" secondAttribute="centerX" id="yhs-4O-wss"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answer1" destination="Yxd-Lu-cpg" id="eGf-MU-d6D"/>
+                        <outlet property="answer2" destination="gWO-6m-fnU" id="76o-9g-pYZ"/>
+                        <outlet property="answer3" destination="2NB-te-N9F" id="udN-iU-7CF"/>
+                        <outlet property="answer4" destination="og9-7B-ldv" id="0SF-Lq-Q7o"/>
+                        <outlet property="answerStack" destination="su1-HW-ewp" id="eAI-C7-Dy5"/>
+                        <outlet property="cardCategory" destination="vgb-j9-mAf" id="tA0-qh-YS7"/>
+                        <outlet property="cardField" destination="kd1-9d-Gum" id="qlY-4o-tQL"/>
+                        <outlet property="cardNumber" destination="5zM-bh-q6s" id="H1A-42-HOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTd-Ni-CXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="-141.5492957746479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
